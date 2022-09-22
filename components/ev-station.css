@@ -1,0 +1,121 @@
+.ev-station-blog-post-card {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  box-shadow: 4px 4px 10px 0px rgba(18, 18, 18, 0.1);
+  transition: 0.3s;
+  align-items: stretch;
+  border-color: #c4c4c4;
+  border-width: 1px;
+  border-radius: 10px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #ffffff;
+}
+.ev-station-blog-post-card:hover {
+  transform: scale(1.02);
+}
+.ev-station-image {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+.ev-station-container {
+  flex: 1;
+  height: 200px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-twounits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: flex-start;
+}
+.ev-station-container1 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-halfunit);
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ev-station-text {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.ev-station-container2 {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-halfunit);
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ev-station-text1 {
+  color: var(--dl-color-gray-500);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.ev-station-text2 {
+  color: #ff0101;
+  font-style: normal;
+  font-weight: 700;
+}
+.ev-station-container3 {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-halfunit);
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ev-station-text3 {
+  color: var(--dl-color-gray-500);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.ev-station-text4 {
+  color: var(--dl-color-gray-500);
+  font-weight: 300;
+}
+
+
+@media(max-width: 991px) {
+  .ev-station-blog-post-card {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .ev-station-image {
+    padding: 20px;
+  }
+}
+@media(max-width: 767px) {
+  .ev-station-blog-post-card {
+    height: 200px;
+    flex-direction: row;
+  }
+  .ev-station-image {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+  }
+}
+@media(max-width: 479px) {
+  .ev-station-blog-post-card {
+    height: 200px;
+  }
+  .ev-station-image {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    align-self: center;
+  }
+}
